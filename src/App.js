@@ -1,17 +1,21 @@
 import { useState } from "react";
 import "./App.css";
 import Home from "./components/home/Home";
+import Cards from "./components/cards/Cards";
+import About from "./components/about/About";
+
 import {preventDefault} from "./utils/functions/functions"
 
 function App() {
 
-  let [page, setPage] = useState('Home')
+  let url = 'http://localhost:3000/home';
+  let [page, setPage] = useState(url)
 
   const handleLoadEvents = () => {
     const elements = document.getElementsByTagName('a');
     for(const element of elements){
       element.addEventListener('click', () => {
-        setPage(element.innerHTML)
+        setPage(element.href)
       })
     }
   }
@@ -34,7 +38,9 @@ function App() {
         </nav>
       </header>
       <main className="App-main">
-        {page === "Home" && <Home />}
+        {page === "http://localhost:3000/home" && <Home />}
+        {page === "http://localhost:3000/cards" && <Cards />}
+        {page === "http://localhost:3000/about" && <About />}
       </main>
       <script>
         {setTimeout(()=>{preventDefault()}, 1)};

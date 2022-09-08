@@ -14,7 +14,7 @@ const Home = () => {
                 <EfeitoMaquina texto={saudacao}/>
             </section>
             <section className={styles.ancora}>
-                <button className={'button-85 ' + styles.btn_85 }>Acesse os cards!</button>
+                <a href='/cards'><button className={'button-85 ' + styles.btn_85 }>Acesse os cards!</button></a>
             </section>
         </div>
     </section>

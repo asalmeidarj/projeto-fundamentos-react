@@ -18,6 +18,10 @@ a:hover {
   color: #7c8bcc;
 }
 
+a:active {
+  color:#9620cc
+}
+
 
 .App-header {
   width: 100vw;

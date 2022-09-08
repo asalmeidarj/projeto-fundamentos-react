@@ -18,4 +18,14 @@
 .btn_85 {
     min-width: 300px !important;
     font-size: 30px;
+    color: #F0F6FC;
+    transition: 0.4s
+}
+
+.btn_85:hover {
+    color: #8b8b8b
+}
+
+.btn_85:active {
+    opacity: 0.8;
 }
