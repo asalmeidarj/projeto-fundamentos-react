@@ -4,7 +4,7 @@ import Home from "./components/home/Home";
 import Cards from "./components/cards/Cards";
 import About from "./components/about/About";
 
-import {preventDefault} from "./utils/functions/functions"
+import {preventDefaultTag} from "./utils/functions/functions"
 
 function App() {
 
@@ -43,7 +43,7 @@ function App() {
         {page === "http://localhost:3000/about" && <About />}
       </main>
       <script>
-        {setTimeout(()=>{preventDefault()}, 1)};
+        {setTimeout(()=>{preventDefaultTag('a')}, 1)};
         {setTimeout(()=>{handleLoadEvents()}, 1)}
       </script>
     </div>
