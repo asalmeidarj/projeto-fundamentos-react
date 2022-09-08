@@ -1,0 +1,21 @@
+.main {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saudacao {
+    position: relative;
+    padding-top: 20px;
+    min-height: 200px;
+}
+
+.btn_85 {
+    min-width: 300px !important;
+    font-size: 30px;
+}
