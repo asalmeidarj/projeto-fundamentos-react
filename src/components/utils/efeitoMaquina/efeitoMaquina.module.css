@@ -1,14 +1,19 @@
+/*
 .container {
     max-width: 600px;
     min-width: 50vw;
     min-height: 100px;
     padding: 40px;
 }
+*/
+
+.container {
+    position: relative;
+}
 
 .title {
     padding: 0 auto;
 }
-
 .title::after {
     content: '|';
     margin-left: 5px;
