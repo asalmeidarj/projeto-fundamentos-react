@@ -2,6 +2,7 @@
     width: 100%;
 }
 
+
 .container {
     width: 100%;
     display: flex;
@@ -9,15 +10,24 @@
     align-items: center;
 }
 
-.saudacao {
+.container_saudacao {
+    max-width: 600px;
+    min-width: 70vw;
     position: relative;
-    padding-top: 20px;
-    min-height: 200px;
+    padding: 20px;
+    padding-top: 50px;
+    min-height: 150px;
+}
+
+
+.efeitoMaquina {
+    font-size:  calc(1vw + 16px);
 }
 
 .btn_85 {
-    min-width: 300px !important;
-    font-size: 30px;
+    padding: 10px;
+    min-width: 40vw;
+    font-size: calc(1vw + 10px);
     color: #F0F6FC;
     transition: 0.4s
 }
