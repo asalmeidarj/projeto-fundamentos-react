@@ -1,8 +1,11 @@
 import React from 'react'
+import ListaCards from './ListaCards'
 
 const Cards = () => {
   return (
-    <div>Cards</div>
+    <div>
+      <ListaCards />
+    </div>
   )
 }
 
