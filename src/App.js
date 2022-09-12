@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Home from "./components/home/Home";
+import CadastrarCards from "./components/cards/CadastrarCards";
 import Cards from "./components/cards/Cards";
 import About from "./components/about/About";
 
@@ -31,6 +32,7 @@ function App() {
           <div>
             <ul>
               <li><a href="./home">Home</a></li>
+              <li><a href="./cadastro">Cadastrar Cards</a></li>
               <li><a href="./cards">Cards</a></li>
               <li><a href="./about">About</a></li>
             </ul>
@@ -39,6 +41,7 @@ function App() {
       </header>
       <main className="App-main">
         {page === "http://localhost:3000/home" && <Home />}
+        {page === "http://localhost:3000/cadastro" && <CadastrarCards/>}
         {page === "http://localhost:3000/cards" && <Cards />}
         {page === "http://localhost:3000/about" && <About />}
       </main>
