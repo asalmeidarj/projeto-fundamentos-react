@@ -1,10 +1,14 @@
+/** Configurações Gerais do formulário*/
+
 input, textarea {
     color: black;
 }
 
 .form_cadastro {
-    display: relative;
+    position: relative;
     background-color: #161b24;
+    border: 1px solid #fefefe0c;
+    box-shadow: rgba(136, 136, 136, 0.15) 2.4px 2.4px 3.2px;
     max-width: 30vw;
     min-width: 230px;
     margin: 10px auto;
@@ -18,22 +22,27 @@ input, textarea {
     padding: 15px 0;
 }
 
-.form_cadastro  label {
+.form_cadastro > label {
     width: 100%;
     margin-bottom: 10px;
     align-items: center;
     display: flex;
 }
 
-.form_cadastro  label span {
+.form_cadastro > label > span {
     width: 120px;
 }
 
-.form_cadastro label input {
+.form_cadastro > label > input {
     width: 100%;
     height: 30px;
+    background-color: #fefefe;
+    padding-left: 10px;
 }
+/** Configurações Gerais */
 
+
+/** Textarea */
 .container_textarea {
     position: relative;
     display: flex;
@@ -47,11 +56,143 @@ input, textarea {
     top: 7px;
     width: 200px;
 }
-
 .container_textarea textarea {
     width: 100%;
     margin-top: 40px;
 }
-.input_cadastro {
+/** Fim Textarea */
+
+
+
+
+/** Container da area de upload */
+.container_upload {
+    margin: 5px 0;
+    padding: 10px 0;
+    height: 150px;
+    border-top: 1px solid rgba(94, 94, 94, 0.933);
+    border-bottom: 1px solid rgba(94, 94, 94, 0.933);
+}
+
+
+/* Botão Upload */
+.form_cadastro > label > .btn_upload {
+    width: 30%;
+    min-width: 80px;
+}
+
+.icon_upload {
+    width: 100%;
+}
+
+.icon_upload img {
+    cursor: pointer;
+    opacity: 0.2;
+    padding: 5px;
+    max-width: 70%;
+    transition: 0.5s;
+}
+
+.icon_upload img:hover {
+    opacity: 1;
+}
+
+.icon_upload img:active {
+    opacity: 0.5;
+    max-width: 80%;
+}
+
+.input_upload {
     display: none;
+}
+/* Fim Botão Upload */
+
+
+
+/** Container para area da imagem preview */
+.container_imagemPreview {
+    height: 100%;
+    width: 100%;
+}
+
+.section_imagemPreview{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_imagemPreview > div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_imagemPreview {
+    font-size: calc(1vw + 6px);
+}
+
+.img_imagemPreview {
+    height: 100%;
+}
+
+.icon_close {
+    position: relative;
+    top: -60px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fefefe28;
+    background-color: rgba(73, 71, 71, 0.158);
+    border-radius: 3px;
+}
+
+.icon_close:hover {
+    border: 1px solid #fefefe28;
+    background-color: rgb(73, 71, 71);
+}
+
+/** Fim Container para area da imagem preview */
+
+
+.form_cadastro > .container_btn_enviarForm {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.btn_enviarForm {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 50px;
+    font-size: calc(1vw + 10px);
+    border: 1px solid #fefefe2d;
+    background-color: #212f47;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.btn_enviarForm:hover {
+    opacity: 1;
+}
+
+.btn_enviarForm:active {
+    opacity: 0.7;
+}
+
+
+.container_validation {
+    width: 100%;
+    height: 70px;
 }

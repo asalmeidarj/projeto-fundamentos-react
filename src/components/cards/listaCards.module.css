@@ -1,0 +1,128 @@
+.container_lista {
+    margin: 0 auto;
+    position: relative;
+    width: 50vw;
+}
+
+.ul_lista {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.items {
+    position: relative;
+    max-height: 120px;
+    max-width: 90px;
+    padding: 10px;
+}
+
+.items > img {
+   width: 100%;
+}
+
+.div_icon_avancar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: -30px;
+    width: 50px;
+    height: 100%;
+    /*background-color: red;*/
+}
+
+.div_icon_avancar > img {
+    width: 100%;
+}
+
+.div_icon_voltar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: -30px;
+    width: 50px;
+    height: 100%;
+    /*background-color: blue;*/
+}
+
+.div_icon_voltar > img {
+    width: 100%;
+}
+
+.container_btn_pages {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    min-height: 50px;
+}
+
+.btn_pages {
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 9px;
+    background-color: #636363;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+}
+
+.btn_pages:hover {
+    background-color: #1d6eca;
+}
+
+@media (max-width: 414px) {
+    .container_lista {
+        padding: 0;
+        width: 100vw;
+    }
+
+    .ul_lista {
+        margin: 0 auto;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .items > img {
+        padding: 0;
+        width: 50%;
+     }
+
+     .div_icon_voltar{
+        width: 50px;
+        right: 50px;
+    }
+     .div_icon_voltar > img {
+        width: 50%;
+    }
+
+    .div_icon_avancar > img {
+        width: 50%;
+    }
+
+    .container_btn_pages {
+        width: 80%;
+        min-height: 50px;
+        justify-content: center;
+    }
+    
+    .btn_pages {
+        position: relative;
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 9px;
+        background-color: #636363;
+        margin: 0px;
+        font-size: 16px;
+        cursor: pointer;
+        color: black;
+        transition: 0.5s;
+    }
+}
